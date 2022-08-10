@@ -1,0 +1,12 @@
+import React from 'react'
+import '@testing-library/jest-dom'
+import { render } from '@testing-library/react'
+
+import { {{pascalCase name}} } from '@BarrelComponents'
+
+describe('tests the {{pascalCase name}} component', () => {
+  it('should render the component', () => {
+    const { getByText } = render(<{{pascalCase name}} className="test">{{pascalCase name}}</{{pascalCase name}}>)
+    expect(getByText('{{pascalCase name}}')).toBeInTheDocument()
+  })
+})

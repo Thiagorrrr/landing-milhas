@@ -1,0 +1,14 @@
+import React from 'react'
+import { ComponentMeta, ComponentStory } from '@storybook/react'
+import { {{pascalCase name}} } from '@BarrelComponents'
+
+export default {
+  title: '{{sentenceCase type}}/{{pascalCase name}}',
+  component: {{pascalCase name}}
+} as ComponentMeta<typeof {{pascalCase name}}>
+
+const Template: ComponentStory<typeof {{pascalCase name}}> = (args) => {
+  return <{{pascalCase name}} {...args} />
+}
+
+export const Default = Template.bind({})
