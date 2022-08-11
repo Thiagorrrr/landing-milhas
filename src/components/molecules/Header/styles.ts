@@ -9,6 +9,6 @@ export const Wrapper = styled.header`
     color: #fff;
     width: 100%;
     height: 50px;
-    padding: 16px;
+    padding: ${theme.spacings.small};
   `}
 `

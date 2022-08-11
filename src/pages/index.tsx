@@ -1,3 +1,4 @@
+import { SectionOffer } from '@Components/molecules/SectionOffer'
 import { Header } from '@Components/molecules/Header'
 import { SectionHero } from '@Components/molecules/SectionHero'
 
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <Header />
       <SectionHero image={'img/content.png'} />
+      <SectionOffer />
     </>
   )
 }

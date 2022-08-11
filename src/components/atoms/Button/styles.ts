@@ -15,7 +15,7 @@ export const ButtonWrapper = styled.a<Props>`
     padding: 1rem;
     border: 2px solid ${theme.colors.white};
     color: ${theme.colors.white};
-    font-size: ${theme.font.sizes.xsmall};
+    font-size: ${theme.font.sizes.small};
     text-decoration: none;
     text-align: center;
     white-space: nowrap;

@@ -5,3 +5,4 @@ export { Logo } from '@Components/atoms/Logo'
 
 //molecules
 export { Header } from '@Components/molecules/Header'
+export { SectionOffer } from '@Components/molecules/SectionOffer'

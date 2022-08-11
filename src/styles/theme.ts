@@ -11,13 +11,13 @@ export default {
       "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
     bold: 600,
     sizes: {
-      xxsmall: '1.4rem',
-      xsmall: '1.6rem',
-      small: '1.8rem',
-      medium: '2.2rem',
-      large: '2.6rem',
-      xlarge: '3.4rem',
-      xxlarge: '5.2rem'
+      xxsmall: '0.4rem',
+      xsmall: '0.8rem',
+      small: '1.6rem',
+      medium: '2.4rem',
+      large: '3.2rem',
+      xlarge: '4.0rem',
+      xxlarge: '4.8rem'
     }
   },
   colors: {
@@ -29,15 +29,16 @@ export default {
     boxBg: 'rgba(211, 211, 211, 0.33)',
     white: '#FFFFFF',
     black: '#000000',
-    gray: '#BFBFC3'
+    gray: '#BFBFC3',
+    red: '#FE3030'
   },
   spacings: {
-    xxsmall: '0.8rem',
-    xsmall: '1.6rem',
-    small: '2.4rem',
-    medium: '3.2rem',
-    large: '6.0rem',
-    xlarge: '6.4rem',
-    xxlarge: '12.8rem'
+    xxsmall: '0.4rem',
+    xsmall: '0.8rem',
+    small: '1.6rem',
+    medium: '2.4rem',
+    large: '2.6rem',
+    xlarge: '3.2rem',
+    xxlarge: '4.0rem'
   }
 }
