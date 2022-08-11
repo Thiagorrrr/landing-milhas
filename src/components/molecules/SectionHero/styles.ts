@@ -13,6 +13,6 @@ export const Wrapper = styled.section<Props>`
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    padding:   10px 0 10px 0;
+    padding:10px 0 10px 0;
   `}
 `
