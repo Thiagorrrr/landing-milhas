@@ -33,14 +33,9 @@ export const Wrapper = styled.div`
   ${({ theme }) => css`
     background: transparent;
     padding: 1rem;
-    color: ${theme.colors.white};
     font-size: ${theme.font.sizes.xsmall};
     font-weight: bold;
     text-align: center;
-
-    &:hover {
-      background: ${theme.colors.primaryHover};
-    }
   `}
 `
 export const StyledTitle = styled.h2<PropsTitle>`
