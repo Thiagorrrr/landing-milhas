@@ -5,7 +5,7 @@ export const Main = ({
   description = 'Sua nova loja pet'
 }) => (
   <S.Wrapper>
-    <S.Logo src="img/logo.svg" alt="Imagem de uma logo" />
+    <S.Logo src="img/logo.png" alt="Imagem de uma logo" />
     <S.Title>{title}</S.Title>
     <S.Description>{description} </S.Description>
     <S.Logo src="img/hero-illustration.svg" alt="Imagem de uma ilustração" />
