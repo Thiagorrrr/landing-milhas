@@ -10,7 +10,6 @@ export const Wrapper = styled.section<Props>`
     justify-content: center
     background-color: ${theme.colors.primary};
     background-image: url(${image});
-    background-position-x: -50px;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
