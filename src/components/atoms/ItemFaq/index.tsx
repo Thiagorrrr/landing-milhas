@@ -22,7 +22,7 @@ export const ItemFaq = ({
     closeAll(event)
   }
   return (
-    <S.Wrapper data-index={item} onClick={Send}>
+    <S.Wrapper open={expand} data-index={item} onClick={Send}>
       <S.Box open={expand}>
         <S.Title open={expand}>{title}</S.Title>
         <S.BoxSvg>

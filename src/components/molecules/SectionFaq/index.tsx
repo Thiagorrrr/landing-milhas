@@ -23,7 +23,7 @@ const dataList = [
     id: '2',
     title: 'Como funciona as reuniões online ?',
     description:
-      'Id elit aliqua sit reprehenderit fugiat non minim in nostrud sunt culpa nulla voluptate elit. Dolor nisi do ad fugiat fugiat. Commodo labore ex dolor tempor laborum excepteur id pariatur do cupidatat sint non. Incididunt magna cupidatat eiusmod aliquip esse excepteur consectetur. Irure culpa in minim aliqua nostrud. Irure in cupidatat cupidatat qui qui incididunt cillum officia.',
+      'Id elit aliqua sit reprehenderit fugiat non minim in nostrud sunt culpa nulla voluptate elit. Dolor nisi do ad fugiat fugiat. Commodo labore ex dolor tempor laborum excepteur id pariatur do cupidatat sint non. Incididunt magna cupidatat eiusmod aliquip esse excepteur consectetur.',
     expanded: false
   }
 ]

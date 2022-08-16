@@ -2,7 +2,8 @@ import styled, { css } from 'styled-components'
 type Props = {
   open?: boolean
 }
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<Props>`
+  height: 70px;
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
@@ -11,13 +12,21 @@ export const Wrapper = styled.div`
     border: 2px solid ${theme.colors.primary};
     margin-bottom: ${theme.spacings.small};
     overflow: hidden;
+    transition: ease-in-out all 200ms;
   `}
+  ${({ open }) =>
+    open &&
+    css`
+      transition: ease-in-out all 200ms;
+      height: 280px;
+    `}
 `
 export const Box = styled.div<Props>`
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: -1;
+
   ${({ theme, open }) =>
     open &&
     css`
@@ -45,32 +54,25 @@ export const Title = styled.h3<Props>`
     `}
 `
 export const Body = styled.div<Props>`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 0;
-  transition: ease-in-out all 200ms;
   overflow: hidden;
 
   z-index: -1;
 
   ${({ theme }) => css`
+    padding: ${theme.spacings.small};
     color: ${theme.colors.black};
   `}
-  ${({ open }) =>
+  ${({ theme, open }) =>
     open &&
     css`
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: ease-in-out all 200ms;
-      height: 140px;
+      padding: ${theme.spacings.small};
 
       span {
-        width: 95%;
+        overflow: hidden;
+        height: 170px;
         display: block;
       }
-    `}
+    `};
 `
 export const Image = styled.svg<Props>`
   transition: ease-in-out all 200ms;
