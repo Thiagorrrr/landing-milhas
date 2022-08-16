@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
-    width: 80%;
+    width: 95%;
     max-width: 320px;
     display: inline-block;
     border-radius: 20px;
