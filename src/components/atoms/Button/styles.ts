@@ -11,6 +11,7 @@ const buttonModifiers = {
 }
 export const ButtonWrapper = styled.a<Props>`
   ${({ theme, contact }) => css`
+    display: inline-block;
     background: transparent;
     padding: 1rem;
     border: 2px solid ${theme.colors.white};

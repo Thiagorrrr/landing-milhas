@@ -10,7 +10,7 @@ type PropsTitle = {
     | 'large'
     | 'xlarge'
     | 'xxlarge'
-  colorTitle: 'primary' | 'secondary ' | 'red'
+  colorTitle?: 'primary' | 'secondary' | 'red' | 'black' | 'yellow' | 'blue'
 }
 type PropsSub = {
   sizeSub?:
@@ -21,7 +21,7 @@ type PropsSub = {
     | 'large'
     | 'xlarge'
     | 'xxlarge'
-  colorSub: 'primary' | 'secondary' | 'black'
+  colorSub?: 'primary' | 'secondary' | 'black' | 'gray'
 }
 
 const SizeTile = (sizeTitle: string) => {
@@ -86,6 +86,15 @@ const ColorVariations = (colorTitle: string) => {
     `,
     red: css`
       color: ${theme.colors.red};
+    `,
+    black: css`
+      color: ${theme.colors.black};
+    `,
+    yellow: css`
+      color: ${theme.colors.secondary};
+    `,
+    blue: css`
+      color: ${theme.colors.primary};
     `
   }[colorTitle]
 }
@@ -99,25 +108,40 @@ const ColorVariationsSub = (colorSub: string) => {
     `,
     black: css`
       color: ${theme.colors.black};
+    `,
+    gray: css`
+      color: ${theme.colors.gray};
     `
   }[colorSub]
 }
 
 export const Wrapper = styled.div`
-  font-weight: bold;
   text-align: center;
 `
 export const StyledTitle = styled.h2<PropsTitle>`
-  ${({ colorTitle, sizeTitle }) => css`
+  ${({ theme, colorTitle, sizeTitle }) => css`
+    font-weight: bold;
+    text-align: center;
     ${!!colorTitle && ColorVariations(colorTitle)}
     ${!!sizeTitle && SizeTile(sizeTitle)}
+    .yellow {
+      color: ${theme.colors.secondary};
+    }
+    .red {
+      color: ${theme.colors.red};
+    }
   `};
 `
 
-export const StyledSub = styled.p<PropsSub>`
+export const StyledSub = styled.div<PropsSub>`
   ${({ theme, colorSub, sizeSub }) => css`
+    text-align: center;
     padding: ${theme.spacings.small} 0 ${theme.spacings.small} 0;
     ${!!colorSub && ColorVariationsSub(colorSub)}
     ${!!sizeSub && SizeSub(sizeSub)}
+    .gap {
+      padding-bottom: ${theme.spacings.large};
+      text-align: initial;
+    }
   `};
 `

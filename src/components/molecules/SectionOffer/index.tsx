@@ -14,7 +14,7 @@ export const SectionOffer = () => (
     <Card
       price={'20,00'}
       oldPrice={'39,00'}
-      offer={30}
+      offer={50}
       btnTitle={'Quero aprender'}
       dataList={[
         'Acesso ao Close Friends',

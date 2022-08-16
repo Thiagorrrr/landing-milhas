@@ -4,10 +4,9 @@ export const Wrapper = styled.section`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    color: ${theme.colors.white};
-    width: 100%;
+    align-items: center;
+    background-color: ${theme.colors.boxBg};
     padding-top: ${theme.spacings.small};
   `}
 `

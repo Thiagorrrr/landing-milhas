@@ -3,7 +3,7 @@ import React from 'react'
 import * as S from './styles'
 
 type Props = {
-  title: string
+  title: React.ReactNode
   sizeTitle?:
     | 'xxsmall'
     | 'xsmall'
@@ -12,7 +12,7 @@ type Props = {
     | 'large'
     | 'xlarge'
     | 'xxlarge'
-  subTitle?: string
+  subTitle?: React.ReactNode
   sizeSub?:
     | 'xxsmall'
     | 'xsmall'
@@ -21,8 +21,8 @@ type Props = {
     | 'large'
     | 'xlarge'
     | 'xxlarge'
-  colorTitle: 'primary' | 'secondary ' | 'red'
-  colorSub: 'primary' | 'secondary' | 'black'
+  colorTitle?: 'primary' | 'secondary' | 'red' | 'black' | 'yellow' | 'blue'
+  colorSub?: 'primary' | 'secondary' | 'black' | 'gray'
 }
 
 export const TitleAndSub: React.FC<Props> = ({

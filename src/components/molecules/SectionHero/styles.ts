@@ -16,3 +16,8 @@ export const Wrapper = styled.section<Props>`
     padding:10px 0 10px 0;
   `}
 `
+export const Link = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`

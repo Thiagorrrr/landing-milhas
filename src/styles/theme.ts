@@ -22,14 +22,14 @@ export default {
   },
   colors: {
     primary: '#304FFE',
-    primaryHover: '#E20E8D',
+    primaryHover: '#001bb1',
     secondary: '#FFC107',
     third: '#000631',
     fourth: '#09152F',
     boxBg: 'rgba(211, 211, 211, 0.33)',
     white: '#FFFFFF',
     black: '#000000',
-    gray: '#BFBFC3',
+    gray: '#686868',
     red: '#FE3030'
   },
   spacings: {
