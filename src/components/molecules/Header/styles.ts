@@ -5,7 +5,7 @@ export const Wrapper = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: ${theme.colors.primary};
+    background-color: ${theme.colors.third};
     color: #fff;
     width: 100%;
     height: 50px;

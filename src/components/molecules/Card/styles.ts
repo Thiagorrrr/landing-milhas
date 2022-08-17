@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
     height: 100%;
     padding: 46px ${theme.spacings.small} ${theme.spacings.small}
       ${theme.spacings.small};
-    margin: ${theme.spacings.small} 0;
+    margin: 30px auto 0;
   `}
 `
 export const Offer = styled.span`
@@ -37,6 +37,8 @@ export const List = styled.ul`
 `
 export const Item = styled.li`
   ${({ theme }) => css`
+    display: flex;
+    align-items: center;
     font-weight: bold;
     padding-bottom: ${theme.spacings.xxsmall};
   `}
@@ -71,4 +73,13 @@ export const Price = styled.span`
     font-size: ${theme.font.sizes.large};
     color: ${theme.colors.secondary};
   `}
+`
+export const Box = styled.div``
+export const Img = styled.img`
+  width: 50px;
+  position: absolute;
+  height: 50px;
+  top: -20px;
+  right: -20px;
+  z-index: 2;
 `

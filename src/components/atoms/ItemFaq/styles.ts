@@ -18,7 +18,7 @@ export const Wrapper = styled.div<Props>`
     open &&
     css`
       transition: ease-in-out all 200ms;
-      height: 280px;
+      height: 220px;
     `}
 `
 export const Box = styled.div<Props>`

@@ -55,7 +55,12 @@ export const SectionModules = ({ image }: Props) => (
       </Slider>
     </S.Box>
     <S.Content>
-      <Button contact={true} href="#" onClick={() => null}>
+      <Button
+        target="_self"
+        contact={true}
+        href="https://app.hub.la/checkout/glnqbDcYaUqVQC9MQVZM"
+        onClick={() => null}
+      >
         Quero lucrar com milhas
       </Button>
     </S.Content>

@@ -36,7 +36,12 @@ export const SectionAbout = ({ image }: Props) => (
         </>
       }
     />
-    <Button href="#" contact={true} onClick={() => null}>
+    <Button
+      target="_blank"
+      href="https://wa.me/5521983427854"
+      contact={true}
+      onClick={() => null}
+    >
       Contato
       <S.Logo src="img/icons/whats.svg" />
     </Button>

@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
 export const Title = styled.h3`
   ${({ theme }) => css`
     text-align: center;
-    color: ${theme.colors.white};
+    color: ${theme.colors.secondary};
     padding-top: ${theme.spacings.medium};
     padding-bottom: ${theme.spacings.medium};
   `}

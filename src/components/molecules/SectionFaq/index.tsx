@@ -8,22 +8,34 @@ const dataList = [
   {
     id: '0',
     title: 'Qual é a forma de pagamento ?',
-    description:
-      'Quis quis eu aliqua aute laboris velit laboris nulla elit aliqua. Ad officia anim quis velit ad laboris Lorem. Dolore proident mollit minim irure pariatur aliqua fugiat laborum. Nulla labore anim qui irure.',
+    description: 'Pix, cartão de crédito ou Boleto',
     expanded: false
   },
   {
     id: '1',
-    title: 'Quanto tempo fico no Close friends ?',
+    title: 'Para quem é o Ebook?',
     description:
-      'Ut pariatur et anim amet duis mollit ipsum ex eiusmod fugiat labore. Aliqua elit pariatur duis excepteur reprehenderit in do. Eu eiusmod elit officia commodo aliqua commodo laborum veniam consectetur pariatur Lorem magna non enim. Ex elit enim enim fugiat pariatur mollit in dolor.',
+      'Iniciantes e intermediários no conhecimento em milhas aéreas ',
     expanded: false
   },
   {
     id: '2',
-    title: 'Como funciona as reuniões online ?',
+    title: 'Como vou receber o Ebook?',
+    description: 'Assim que fizer o pagamento do grupo VIP terá o acesso.',
+    expanded: false
+  },
+  {
+    id: '3',
+    title: 'Se eu não gostar, posso sair do grupo?',
     description:
-      'Id elit aliqua sit reprehenderit fugiat non minim in nostrud sunt culpa nulla voluptate elit. Dolor nisi do ad fugiat fugiat. Commodo labore ex dolor tempor laborum excepteur id pariatur do cupidatat sint non. Incididunt magna cupidatat eiusmod aliquip esse excepteur consectetur.',
+      'Sim, você pode efetuar o pagamento mensal que é de R$20 e não renovar no próximo mês, mas duvido muito que irá querer sair !',
+    expanded: false
+  },
+  {
+    id: '4',
+    title: 'Como funciona as reuniões semanais ?',
+    description:
+      'É on-line diretamente comigo e os demais participantes do grupo, o qual batemos a apostila, promoções que teve ao longo da semana e retirada de dúvidas.',
     expanded: false
   }
 ]
