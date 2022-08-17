@@ -29,6 +29,7 @@ const dataList = [
 const settings = {
   className: 'center',
   dots: false,
+  arrows: false,
   infinite: true,
   speed: 300,
   slidesToShow: 1.8,

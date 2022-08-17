@@ -30,6 +30,7 @@ const dataList = [
 
 const settings = {
   dots: true,
+  arrows: false,
   slidesToShow: 1,
   centerMode: true,
   centerPadding: '0px'
