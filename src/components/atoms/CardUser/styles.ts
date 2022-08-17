@@ -27,9 +27,6 @@ export const BoxName = styled.div`
     display: flex;
     flex-direction: column;
     margin-left: ${theme.spacings.xsmall};
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   `}
 `
 export const Name = styled.span`
@@ -42,9 +39,6 @@ export const Name = styled.span`
 `
 export const Ocupation = styled.span`
   ${({ theme }) => css`
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     text-transform: capitalize;
     font-weight: bold;
     font-size: 1.2rem;
