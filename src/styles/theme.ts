@@ -26,11 +26,13 @@ export default {
     secondary: '#FFC107',
     third: '#000631',
     fourth: '#09152F',
+    line: '#1E2C4E',
     boxBg: 'rgba(211, 211, 211, 0.33)',
     white: '#FFFFFF',
     black: '#000000',
     gray: '#686868',
-    red: '#FE3030'
+    red: '#FE3030',
+    gray2: '#BFBFC3'
   },
   spacings: {
     xxsmall: '0.4rem',

@@ -10,14 +10,19 @@ export const Wrapper = styled.section<Props>`
     background-image: url(${image});
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: ${theme.spacings.large};
+    padding-bottom: ${theme.spacings.xxlarge};
   `}
 `
 export const Content = styled.div`
   ${({ theme }) => css`
     text-align: center;
     margin: auto 20px;
-    padding-top: ${theme.spacings.medium};
+    padding-top: ${theme.spacings.large};
+  `}
+`
+export const Box = styled.div`
+  ${({ theme }) => css`
+    padding: ${theme.spacings.small} 0;
   `}
 `
 export const Title = styled.h2`

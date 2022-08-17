@@ -136,6 +136,7 @@ export const StyledTitle = styled.h2<PropsTitle>`
 export const StyledSub = styled.div<PropsSub>`
   ${({ theme, colorSub, sizeSub }) => css`
     text-align: center;
+    font-weight: bold;
     padding: ${theme.spacings.small} 0 ${theme.spacings.small} 0;
     ${!!colorSub && ColorVariationsSub(colorSub)}
     ${!!sizeSub && SizeSub(sizeSub)}

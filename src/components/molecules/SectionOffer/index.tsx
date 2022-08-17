@@ -2,12 +2,19 @@ import * as S from './styles'
 import { Card } from '@Components/molecules/Card'
 import { TitleAndSub } from '@Components/atoms/TitleAndSub'
 export const SectionOffer = () => (
-  <S.Wrapper>
+  <S.Wrapper id="card">
     <TitleAndSub
       title={'PROMOÇÃO'}
       sizeTitle="large"
       sizeSub="medium"
-      subTitle={'Adesão ao Grupo VIP'}
+      subTitle={
+        <>
+          Adesão ao grupo VIP
+          <S.Box>
+            <S.Img src="img/vips.png" />
+          </S.Box>
+        </>
+      }
       colorTitle="red"
       colorSub="black"
     />

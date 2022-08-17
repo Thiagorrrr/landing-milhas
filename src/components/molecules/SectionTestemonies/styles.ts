@@ -10,3 +10,8 @@ export const Wrapper = styled.section`
     padding-top: ${theme.spacings.small};
   `}
 `
+export const Box = styled.section`
+  ${({ theme }) => css`
+    padding: ${theme.spacings.small} 0;
+  `}
+`

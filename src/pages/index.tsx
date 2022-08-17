@@ -6,6 +6,7 @@ import { SectionModules } from '@Components/molecules/SectionModules'
 import { SectionTestemonies } from '@Components/molecules/SectionTestemonies'
 import { SectionAbout } from '@Components/molecules/SectionAbout'
 import { SectionFaq } from '@Components/molecules/SectionFaq'
+import { Footer } from '@Components/molecules/Footer'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <SectionTestemonies />
       <SectionAbout image={'img/wave.png'} />
       <SectionFaq />
+      <Footer />
     </>
   )
 }

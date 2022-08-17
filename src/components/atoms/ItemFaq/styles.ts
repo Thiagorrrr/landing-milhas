@@ -40,7 +40,7 @@ export const BoxSvg = styled.div<Props>`
 `
 export const Title = styled.h3<Props>`
   ${({ theme }) => css`
-    width: 80%;
+    width: 75%;
     padding: ${theme.spacings.small} 0 ${theme.spacings.small}
       ${theme.spacings.xsmall};
     font-size: ${theme.font.sizes.small};

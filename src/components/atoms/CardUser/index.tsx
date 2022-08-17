@@ -31,19 +31,19 @@ export const CardUser: React.FC<Props> = ({
             <S.Ocupation>{ocupation}</S.Ocupation>
           </S.BoxName>
         </S.BoxTextImg>
-        <>
+        <S.BoxStar>
           {[...Array(stars)].map((item, index) => {
             return (
               <>
                 {index < score ? (
-                  <img key={index} src="img/icons/starFull.svg" />
+                  <S.Star key={index} src="img/icons/starFull.svg" />
                 ) : (
-                  <img key={index} src="img/icons/starLess.svg" />
+                  <S.Star key={index} src="img/icons/starLess.svg" />
                 )}
               </>
             )
           })}
-        </>
+        </S.BoxStar>
       </S.Box>
     </S.Wrapper>
   )

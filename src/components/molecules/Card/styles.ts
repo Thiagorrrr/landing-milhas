@@ -12,6 +12,7 @@ export const Wrapper = styled.div`
     height: 100%;
     padding: 46px ${theme.spacings.small} ${theme.spacings.small}
       ${theme.spacings.small};
+    margin: ${theme.spacings.small} 0;
   `}
 `
 export const Offer = styled.span`

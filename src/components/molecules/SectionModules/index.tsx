@@ -10,16 +10,20 @@ type Props = {
 }
 const dataList = [
   {
-    title: 'teste1',
-    list: ['lis1', 'list2', 'list3']
+    title: 'Pontos e Milhas',
+    list: ['Diferença de pontos e milhas', 'Primeiros passos nesse mercado']
   },
   {
-    title: 'teste2',
-    list: ['lis1', 'list2', 'list3']
+    title: 'Como funciona o mercado de milhas',
+    list: ['Lei da oferta e procura', 'Compra e venda']
   },
   {
-    title: 'teste3',
-    list: ['lis1', 'list2', 'list3']
+    title: 'Programas de fidelidade',
+    list: ['Programas dos bancos', 'Programas das Companhias']
+  },
+  {
+    title: 'Como acumular milhas',
+    list: ['Estratégia para gerar milhas', 'Acumulo passivo e ativo']
   }
 ]
 const settings = {
@@ -43,11 +47,13 @@ export const SectionModules = ({ image }: Props) => (
         colorSub="primary"
       />
     </S.Content>
-    <Slider {...settings}>
-      {dataList.map((item) => (
-        <CardModules key={item.title} title={item.title} list={item.list} />
-      ))}
-    </Slider>
+    <S.Box>
+      <Slider {...settings}>
+        {dataList.map((item) => (
+          <CardModules key={item.title} title={item.title} list={item.list} />
+        ))}
+      </Slider>
+    </S.Box>
     <S.Content>
       <Button contact={true} href="#" onClick={() => null}>
         Quero lucrar com milhas

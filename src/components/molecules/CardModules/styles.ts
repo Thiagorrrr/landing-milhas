@@ -27,7 +27,7 @@ export const Item = styled.li`
   ${({ theme }) => css`
     display: flex;
     font-weight: bold;
-    padding-bottom: ${theme.spacings.xxsmall};
+    padding-bottom: ${theme.spacings.small};
   `}
 `
 export const Dot = styled.span`
