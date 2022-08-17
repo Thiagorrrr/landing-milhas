@@ -33,6 +33,7 @@ export const WhatsTitle = styled.span`
   ${({ theme }) => css`
     font-weight: bold;
     font-size: ${theme.spacings.small};
+    margin-right: ${theme.spacings.xsmall};
     .yellow {
       color: ${theme.colors.secondary};
     }
@@ -77,10 +78,22 @@ export const Item = styled.div`
 `
 export const Link = styled.a`
   ${({ theme }) => css`
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: ${theme.colors.white};
     &:hover {
       color: ${theme.colors.secondary};
+    }
+  `}
+`
+export const Svg = styled.svg`
+  ${({ theme }) => css`
+    width: 20px;
+    height: 20px;
+    margin-left: ${theme.spacings.xsmall};
+    path {
+      fill: ${theme.colors.white};
     }
   `}
 `
