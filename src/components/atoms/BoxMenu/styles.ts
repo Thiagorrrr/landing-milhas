@@ -29,6 +29,7 @@ export const Box = styled.div`
     css`
       transition: ease-in-out all 200ms;
       transform: translateY(0%);
+      z-index: 5;
     `}
 `
 export const List = styled.ul`
