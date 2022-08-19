@@ -15,18 +15,8 @@ export const Whats = styled.div`
     justify-content: center;
     align-items: center;
     background-color: ${theme.colors.third};
-    max-width: ${theme.grid.container};
     padding: ${theme.spacings.large} calc(${theme.grid.gutter} / 2);
     margin: 0 auto;
-    &::after {
-      display: block;
-      content: '';
-      width: 100%;
-      height: 2px;
-      position: absolute;
-      bottom: 0;
-      background-color: ${theme.colors.line};
-    }
   `}
 `
 export const WhatsTitle = styled.span`
@@ -48,17 +38,8 @@ export const Archive = styled.div`
     justify-content: center;
     align-items: center;
     background-color: ${theme.colors.third};
-    max-width: ${theme.grid.container};
     padding: ${theme.spacings.large} calc(${theme.grid.gutter} / 2);
-    &::after {
-      display: block;
-      content: '';
-      width: 100%;
-      height: 2px;
-      position: absolute;
-      bottom: 0;
-      background-color: ${theme.colors.line};
-    }
+    border-top: 2px solid ${theme.colors.line};
   `}
 `
 export const List = styled.div`
@@ -106,8 +87,8 @@ export const Copy = styled.div`
     justify-content: center;
     align-items: center;
     background-color: ${theme.colors.fourth};
-    max-width: ${theme.grid.container};
     padding: ${theme.spacings.large} calc(${theme.grid.gutter} / 2);
+    border-top: 2px solid ${theme.colors.line};
   `}
 `
 export const CopyTitle = styled.div`

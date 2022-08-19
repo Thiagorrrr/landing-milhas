@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import media from 'styled-media-query'
 
 export const link = styled.a`
   z-index: 20;

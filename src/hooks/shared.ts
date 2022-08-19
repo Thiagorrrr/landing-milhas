@@ -1,4 +1,3 @@
-// File: useToggle.js
 import { useState, useEffect } from 'react'
 
 const MenuActivated = (initialState = false) => {
