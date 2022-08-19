@@ -33,7 +33,7 @@ const dataList = [
 ]
 
 export const SectionTestemonies = () => (
-  <S.Wrapper>
+  <S.Wrapper id="testemunhas">
     <S.Box>
       <TitleAndSub
         title={'Testemunhas'}

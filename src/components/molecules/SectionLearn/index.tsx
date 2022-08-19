@@ -30,7 +30,7 @@ const test = [
   }
 ]
 export const SectionLearn = () => (
-  <S.Wrapper>
+  <S.Wrapper id="vantagens">
     <Container>
       <TitleAndSub
         title={

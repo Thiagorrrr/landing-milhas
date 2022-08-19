@@ -36,7 +36,7 @@ const settings = {
   centerPadding: '0px'
 }
 export const SectionOffer = () => (
-  <S.Wrapper id="card">
+  <S.Wrapper id="oferta">
     <TitleAndSub
       title={'PROMOÇÃO'}
       sizeTitle="large"

@@ -2,6 +2,7 @@
 export { Main } from '@Components/atoms/Main'
 export { Button } from '@Components/atoms/Button'
 export { Logo } from '@Components/atoms/Logo'
+export { BoxMenu } from '@Components/atoms/BoxMenu'
 
 //molecules
 export { Header } from '@Components/molecules/Header'

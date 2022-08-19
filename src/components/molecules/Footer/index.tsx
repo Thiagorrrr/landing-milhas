@@ -9,7 +9,7 @@ const dataArchive = [
   }
 ]
 export const Footer = () => (
-  <S.Wrapper>
+  <S.Wrapper id="rodape">
     <S.Whats>
       <S.WhatsTitle>
         Ainda possui dúvidas? Chame nosso time no

@@ -6,7 +6,7 @@ type Props = {
   image: string
 }
 export const SectionAbout = ({ image }: Props) => (
-  <S.Wrapper image={image}>
+  <S.Wrapper id="sobre" image={image}>
     <S.Box>
       <S.Image src="img/users/me.jpg" />
     </S.Box>

@@ -37,7 +37,7 @@ const settings = {
   centerPadding: '0px'
 }
 export const SectionModules = ({ image }: Props) => (
-  <S.Wrapper image={image}>
+  <S.Wrapper id="modulos" image={image}>
     <S.Content>
       <TitleAndSub
         title="Módulos do Ebook"

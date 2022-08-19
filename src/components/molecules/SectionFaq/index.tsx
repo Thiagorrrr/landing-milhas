@@ -64,7 +64,7 @@ export const SectionFaq = () => {
     setReload(false)
   }, [])
   return (
-    <S.Wrapper>
+    <S.Wrapper id="faq">
       <Container>
         <TitleAndSub
           colorTitle="black"
