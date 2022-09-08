@@ -1,5 +1,5 @@
 {
-    "name": "Sua loja Pet",
+    "name": "Minhas no alvo",
     "short_name": "App SLP",
     "icons": [
       {
@@ -19,5 +19,5 @@
     "start_url": "/",
     "display": "fullscreen",
     "orientation": "portrait",
-    "description": "Sua nova loja pet - BoilerPlate"
+    "description": "Milhas no alvo - landing page"
   }
