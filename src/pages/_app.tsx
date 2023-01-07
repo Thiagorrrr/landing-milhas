@@ -4,22 +4,18 @@ import Head from 'next/head'
 import GlobalStyle from 'styles/global.styles'
 import { ThemeProvider } from 'styled-components'
 
+import * as gtag from 'lib/gtag'
 import theme from 'styles/theme'
 import Analytics from '@Components/atoms/Analytics'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-declare global {
-  interface Window {
-    gtag?: any
-  }
-}
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
   useEffect(() => {
     const handleRouteChange = (url: any) => {
-      window.gtag.pageview(url)
+      gtag.pageview(url)
     }
     router.events.on('routeChangeComplete', handleRouteChange)
     return () => {
