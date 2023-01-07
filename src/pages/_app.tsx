@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import GlobalStyle from 'styles/global.styles'
@@ -7,20 +8,25 @@ import theme from 'styles/theme'
 import Analytics from '@Components/atoms/Analytics'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
+declare global {
+  interface Window {
+    gtag?: any
+  }
+}
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
   useEffect(() => {
-    const handleRouteChange = url => {
-      gtag.pageview(url)
+    const handleRouteChange = (url: any) => {
+      window.gtag.pageview(url)
     }
     router.events.on('routeChangeComplete', handleRouteChange)
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange)
     }
   }, [router.events])
-  
+
   return (
     <ThemeProvider theme={theme}>
       <Head>
